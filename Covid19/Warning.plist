@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>DARKRED</key>
+	<dict>
+		<key>MIN</key>
+		<string>100</string>
+		<key>MAX</key>
+		<string>100000</string>
+		<key>Instruction</key>
+		<string>- Die Verkehrsampel wird auf DUNKELROT gesetzt, wenn die Inzidenz höher als 100 Fälle pro 100.000 Einwohner ist
+- Diese Regeln gelten
+- Veranstaltungen (z. B. Clubtreffen, Sportveranstaltungen, kulturelle Veranstaltungen usw.) dürfen 50 Personen nicht überschreiten
+- Schließzeit für Lebensmittel- / Gastronomie-Verkaufsstellen, Verbot des Alkoholverkaufs und des Alkoholkonsums in
+bestimmte öffentliche Plätze ab 21:00 Uhr</string>
+		<key>Color</key>
+		<string>DarkRed</string>
+	</dict>
+	<key>RED</key>
+	<dict>
+		<key>MIN</key>
+		<string>50</string>
+		<key>MAX</key>
+		<string>100</string>
+		<key>Instruction</key>
+		<string>- Die Verkehrsampel wird auf ROT gesetzt, wenn die Inzidenz mehr als 50 Fälle pro 100.000 Einwohner beträgt
+- Diese Regeln gelten
+- Private Feiern und Kontakte: nicht mehr als 5 Haushalte oder fünf Personen
+- Das Tragen einer Maske ist in stark frequentierten Räumen, in Fußgängerzonen und in öffentlichen Gebäuden obligatorisch.
+für alle Klassenstufen, an Universitäten, für Teilnehmer an (Sport-) Veranstaltungen usw.
+- Ausgangssperre und Verbot des Verkaufs sowie des Konsums von Alkohol im öffentlichen Raum ab 22:00 Uhr
+Das ZUSÄTZLICHE Signal für Bayern</string>
+		<key>Color</key>
+		<string>Red</string>
+	</dict>
+	<key>YELLOW</key>
+	<dict>
+		<key>MIN</key>
+		<string>35</string>
+		<key>MAX</key>
+		<string>50</string>
+		<key>Instruction</key>
+		<string>- Private Feiern und Kontakte: nicht mehr als zwei Haushalte oder zehn Personen
+- Das Tragen einer Maske ist in stark frequentierten Räumen, in Fußgängerzonen und in öffentlichen Gebäuden obligatorisch.
+in weiterführenden Schulen während des Unterrichts, an Universitäten, für Teilnehmer von (Sport-) Veranstaltungen usw.
+- Ausgangssperre und Verbot des Verkaufs sowie des Alkoholkonsums im öffentlichen Raum ab 23:00 Uhr</string>
+		<key>Color</key>
+		<string>Yellow</string>
+	</dict>
+	<key>GREEN</key>
+	<dict>
+		<key>MIN</key>
+		<integer>0</integer>
+		<key>MAX</key>
+		<string>35</string>
+		<key>Instruction</key>
+		<string>- Einschränkungen des persönlichen Kontakts im öffentlichen Raum
+- Private Veranstaltungen (d. H. Hochzeiten usw.) mit maximal 100 Teilnehmern in geschlossenen Räumen
+und maximal 200 Teilnehmer im Freien
+- Das Tragen einer Maske ist obligatorisch, wenn (einschließlich, aber nicht beschränkt auf) die Nutzung öffentlicher Verkehrsmittel.
+Einkaufen, Essen und Trinken in Restaurants, Bars usw. und bei Mindestentfernung (1,5 m)
+kann nicht gehalten werden</string>
+		<key>Color</key>
+		<string>Green</string>
+	</dict>
+</dict>
+</plist>

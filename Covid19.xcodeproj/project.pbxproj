@@ -7,12 +7,16 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		1CB0420B258266D800C61FAB /* Warning.plist in Resources */ = {isa = PBXBuildFile; fileRef = 1CB0420A258266D800C61FAB /* Warning.plist */; };
+		1CB042102582782C00C61FAB /* LocationManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1CB0420F2582782C00C61FAB /* LocationManager.swift */; };
 		1CEBB88225810CFC001CFF3C /* Covid19App.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1CEBB88125810CFC001CFF3C /* Covid19App.swift */; };
 		1CEBB88425810CFC001CFF3C /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1CEBB88325810CFC001CFF3C /* ContentView.swift */; };
 		1CEBB88625810CFE001CFF3C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1CEBB88525810CFE001CFF3C /* Assets.xcassets */; };
 		1CEBB88925810CFE001CFF3C /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1CEBB88825810CFE001CFF3C /* Preview Assets.xcassets */; };
 		1CEBB89425810CFF001CFF3C /* Covid19Tests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1CEBB89325810CFF001CFF3C /* Covid19Tests.swift */; };
 		1CEBB89F25810CFF001CFF3C /* Covid19UITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1CEBB89E25810CFF001CFF3C /* Covid19UITests.swift */; };
+		1CEBB8B025810DAE001CFF3C /* JsonReader.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1CEBB8AF25810DAE001CFF3C /* JsonReader.swift */; };
+		1CEBB8B82581A895001CFF3C /* WarningLevel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1CEBB8B72581A895001CFF3C /* WarningLevel.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -33,6 +37,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		1CB0420A258266D800C61FAB /* Warning.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; name = Warning.plist; path = Covid19/Warning.plist; sourceTree = SOURCE_ROOT; };
+		1CB0420F2582782C00C61FAB /* LocationManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocationManager.swift; sourceTree = "<group>"; };
 		1CEBB87E25810CFC001CFF3C /* Covid19.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Covid19.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		1CEBB88125810CFC001CFF3C /* Covid19App.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Covid19App.swift; sourceTree = "<group>"; };
 		1CEBB88325810CFC001CFF3C /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -45,6 +51,8 @@
 		1CEBB89A25810CFF001CFF3C /* Covid19UITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = Covid19UITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		1CEBB89E25810CFF001CFF3C /* Covid19UITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Covid19UITests.swift; sourceTree = "<group>"; };
 		1CEBB8A025810CFF001CFF3C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		1CEBB8AF25810DAE001CFF3C /* JsonReader.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = JsonReader.swift; path = JsonReader/JsonReader.swift; sourceTree = "<group>"; };
+		1CEBB8B72581A895001CFF3C /* WarningLevel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WarningLevel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -72,6 +80,15 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		1CB042062582669600C61FAB /* WarningInfo */ = {
+			isa = PBXGroup;
+			children = (
+				1CEBB8B72581A895001CFF3C /* WarningLevel.swift */,
+				1CB0420F2582782C00C61FAB /* LocationManager.swift */,
+			);
+			path = WarningInfo;
+			sourceTree = "<group>";
+		};
 		1CEBB87525810CFC001CFF3C = {
 			isa = PBXGroup;
 			children = (
@@ -95,11 +112,14 @@
 		1CEBB88025810CFC001CFF3C /* Covid19 */ = {
 			isa = PBXGroup;
 			children = (
+				1CB0420A258266D800C61FAB /* Warning.plist */,
 				1CEBB88125810CFC001CFF3C /* Covid19App.swift */,
 				1CEBB88325810CFC001CFF3C /* ContentView.swift */,
+				1CEBB8AF25810DAE001CFF3C /* JsonReader.swift */,
 				1CEBB88525810CFE001CFF3C /* Assets.xcassets */,
 				1CEBB88A25810CFE001CFF3C /* Info.plist */,
 				1CEBB88725810CFE001CFF3C /* Preview Content */,
+				1CB042062582669600C61FAB /* WarningInfo */,
 			);
 			path = Covid19;
 			sourceTree = "<group>";
@@ -235,6 +255,7 @@
 			files = (
 				1CEBB88925810CFE001CFF3C /* Preview Assets.xcassets in Resources */,
 				1CEBB88625810CFE001CFF3C /* Assets.xcassets in Resources */,
+				1CB0420B258266D800C61FAB /* Warning.plist in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -260,7 +281,10 @@
 			buildActionMask = 2147483647;
 			files = (
 				1CEBB88425810CFC001CFF3C /* ContentView.swift in Sources */,
+				1CEBB8B025810DAE001CFF3C /* JsonReader.swift in Sources */,
+				1CB042102582782C00C61FAB /* LocationManager.swift in Sources */,
 				1CEBB88225810CFC001CFF3C /* Covid19App.swift in Sources */,
+				1CEBB8B82581A895001CFF3C /* WarningLevel.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
