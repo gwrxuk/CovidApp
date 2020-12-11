@@ -35,7 +35,7 @@ class FetchData: ObservableObject {
         
         fetchData()
         let date = Date().addingTimeInterval(0)
-        let timer = Timer(fireAt: date, interval: 30, target: self, selector: #selector(fetchData), userInfo: nil, repeats: true)
+        let timer = Timer(fireAt: date, interval:600, target: self, selector: #selector(fetchData), userInfo: nil, repeats: true)
         RunLoop.main.add(timer, forMode: .common)
     }
     
