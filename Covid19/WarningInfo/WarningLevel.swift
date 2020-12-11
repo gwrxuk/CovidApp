@@ -8,19 +8,23 @@
 import SwiftUI
 
 struct WarningLevel: View {
-    let ruleString = "Rule"
+    @ObservedObject var rules = WarningString()
+    var content = ""
+    var case7: Float?
     var body: some View {
-        Text(ruleString).onAppear(perform: {
-            self.getWarning()
-        })
-    }
-    
-    func getWarning(){
-     
-        var nsDictionary: NSDictionary?
-        if let path = Bundle.main.path(forResource: "Warning", ofType: "plist"){
-            if let dict = NSDictionary(contentsOfFile: path) as? Dictionary<String, AnyObject> {
-                print(dict)
+        
+        ForEach(0..<rules.settings.count){i in
+            if let criteria = case7{
+                if criteria >= rules.settings[i].minCase && criteria < rules.settings[i].maxCase{
+                    Circle()
+                        .fill(Color(rules.settings[i].color))
+                        .frame(width: 50, height: 50)
+                    
+                    Text("Cases: \(criteria)")
+                    Text("\(NSLocalizedString(rules.settings[i].instruction, comment: "comment"))")
+                        .font(.system(size: 15))
+                        .lineSpacing(2)
+                }
             }
         }
     }
